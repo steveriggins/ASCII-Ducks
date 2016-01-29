@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "110E0B609D17C542AB7EADDDC4BFD65BF32A2BEA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "67108B0A168D697C36BDA3AD867F29B9F1E14EF2" : 0,
+    "110E0B609D17C542AB7EADDDC4BFD65BF32A2BEA" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C96E032B-14C6-414D-BB1C-9B0E902AD647",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "67108B0A168D697C36BDA3AD867F29B9F1E14EF2" : "ASCII-Ducks\/Modules\/ReSwift\/",
+    "110E0B609D17C542AB7EADDDC4BFD65BF32A2BEA" : "ASCII-Ducks\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ASCII-Ducks",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ASCII-Ducks.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:steveriggins\/ASCII-Ducks.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "110E0B609D17C542AB7EADDDC4BFD65BF32A2BEA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:steveriggins\/ReSwift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "67108B0A168D697C36BDA3AD867F29B9F1E14EF2"
+    }
+  ]
+}

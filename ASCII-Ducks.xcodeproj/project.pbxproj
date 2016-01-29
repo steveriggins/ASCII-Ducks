@@ -15,6 +15,10 @@
 		00B5B1421C5B3CEB00972097 /* ASCII_DucksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B5B1411C5B3CEB00972097 /* ASCII_DucksTests.swift */; };
 		00B5B1651C5B3D9700972097 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B5B1581C5B3D7D00972097 /* ReSwift.framework */; };
 		00B5B1661C5B3D9700972097 /* ReSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00B5B1581C5B3D7D00972097 /* ReSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		00B5B16E1C5B436900972097 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B5B16D1C5B436900972097 /* AppState.swift */; };
+		00B5B1701C5B4AB600972097 /* ScreenNavigationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B5B16F1C5B4AB600972097 /* ScreenNavigationAction.swift */; };
+		00B5B1721C5B4BE000972097 /* ScreenReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B5B1711C5B4BE000972097 /* ScreenReducer.swift */; };
+		00E640C71C5B589200C85125 /* MainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E640C61C5B589200C85125 /* MainStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +113,10 @@
 		00B5B1411C5B3CEB00972097 /* ASCII_DucksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASCII_DucksTests.swift; sourceTree = "<group>"; };
 		00B5B1431C5B3CEB00972097 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00B5B14D1C5B3D7D00972097 /* ReSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReSwift.xcodeproj; path = Modules/ReSwift/ReSwift.xcodeproj; sourceTree = "<group>"; };
+		00B5B16D1C5B436900972097 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		00B5B16F1C5B4AB600972097 /* ScreenNavigationAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenNavigationAction.swift; sourceTree = "<group>"; };
+		00B5B1711C5B4BE000972097 /* ScreenReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenReducer.swift; sourceTree = "<group>"; };
+		00E640C61C5B589200C85125 /* MainStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +160,9 @@
 		00B5B12B1C5B3CEB00972097 /* ASCII-Ducks */ = {
 			isa = PBXGroup;
 			children = (
+				00B5B16A1C5B3FD400972097 /* Actions */,
+				00B5B16B1C5B3FD400972097 /* Reducers */,
+				00B5B16C1C5B3FD400972097 /* Stores */,
 				00B5B12C1C5B3CEB00972097 /* AppDelegate.swift */,
 				00B5B12E1C5B3CEB00972097 /* ViewController.swift */,
 				00B5B1301C5B3CEB00972097 /* Main.storyboard */,
@@ -191,6 +202,31 @@
 				00B5B1641C5B3D7D00972097 /* ReSwift.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		00B5B16A1C5B3FD400972097 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				00B5B16F1C5B4AB600972097 /* ScreenNavigationAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		00B5B16B1C5B3FD400972097 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				00B5B1711C5B4BE000972097 /* ScreenReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		00B5B16C1C5B3FD400972097 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				00B5B16D1C5B436900972097 /* AppState.swift */,
+				00E640C61C5B589200C85125 /* MainStore.swift */,
+			);
+			path = Stores;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,8 +390,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00B5B16E1C5B436900972097 /* AppState.swift in Sources */,
+				00B5B1701C5B4AB600972097 /* ScreenNavigationAction.swift in Sources */,
 				00B5B12F1C5B3CEB00972097 /* ViewController.swift in Sources */,
 				00B5B12D1C5B3CEB00972097 /* AppDelegate.swift in Sources */,
+				00E640C71C5B589200C85125 /* MainStore.swift in Sources */,
+				00B5B1721C5B4BE000972097 /* ScreenReducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,6 +590,7 @@
 				00B5B1481C5B3CEB00972097 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00B5B1491C5B3CEB00972097 /* Build configuration list for PBXNativeTarget "ASCII-DucksTests" */ = {
 			isa = XCConfigurationList;
@@ -558,6 +599,7 @@
 				00B5B14B1C5B3CEB00972097 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

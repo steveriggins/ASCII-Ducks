@@ -7,12 +7,26 @@
 //
 
 import UIKit
+import ReSwift
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, StoreSubscriber {
+    @IBOutlet weak var label: UILabel!
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        mainStore.subscribe(self)
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        mainStore.unsubscribe(self)
+    }
+
+    func newState(state: AppState) {
+        label.text = "\(state.currentScreen)"
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,5 +35,10 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func nextScreenAction(sender: AnyObject) {
+        mainStore.dispatch(ScreenActionNext())
+    }
+    
+    typealias StoreSubscriberStateType = AppState
 }
 
