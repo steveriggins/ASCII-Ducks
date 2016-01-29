@@ -1,0 +1,3 @@
+[submodule "Modules/ReSwift"]
+	path = Modules/ReSwift
+	url = git@github.com:steveriggins/ReSwift.git

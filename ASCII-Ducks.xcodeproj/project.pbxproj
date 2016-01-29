@@ -13,6 +13,8 @@
 		00B5B1341C5B3CEB00972097 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00B5B1331C5B3CEB00972097 /* Assets.xcassets */; };
 		00B5B1371C5B3CEB00972097 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00B5B1351C5B3CEB00972097 /* LaunchScreen.storyboard */; };
 		00B5B1421C5B3CEB00972097 /* ASCII_DucksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B5B1411C5B3CEB00972097 /* ASCII_DucksTests.swift */; };
+		00B5B1651C5B3D9700972097 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B5B1581C5B3D7D00972097 /* ReSwift.framework */; };
+		00B5B1661C5B3D9700972097 /* ReSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00B5B1581C5B3D7D00972097 /* ReSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +25,77 @@
 			remoteGlobalIDString = 00B5B1281C5B3CEB00972097;
 			remoteInfo = "ASCII-Ducks";
 		};
+		00B5B1571C5B3D7D00972097 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00B5B14D1C5B3D7D00972097 /* ReSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 625E66831C1FF97E0027C288;
+			remoteInfo = "ReSwift-iOS";
+		};
+		00B5B1591C5B3D7D00972097 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00B5B14D1C5B3D7D00972097 /* ReSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 625E669A1C1FFA3C0027C288;
+			remoteInfo = "ReSwift-iOSTests";
+		};
+		00B5B15B1C5B3D7D00972097 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00B5B14D1C5B3D7D00972097 /* ReSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25DBCF7B1C30C4AA00D63A58;
+			remoteInfo = "ReSwift-OSX";
+		};
+		00B5B15D1C5B3D7D00972097 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00B5B14D1C5B3D7D00972097 /* ReSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25DBCF871C30C4DB00D63A58;
+			remoteInfo = "ReSwift-OSXTests";
+		};
+		00B5B15F1C5B3D7D00972097 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00B5B14D1C5B3D7D00972097 /* ReSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25DBCF4E1C30C18D00D63A58;
+			remoteInfo = "ReSwift-tvOS";
+		};
+		00B5B1611C5B3D7D00972097 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00B5B14D1C5B3D7D00972097 /* ReSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25DBCF641C30C1AC00D63A58;
+			remoteInfo = "ReSwift-tvOSTests";
+		};
+		00B5B1631C5B3D7D00972097 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00B5B14D1C5B3D7D00972097 /* ReSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25DBCF371C30BF2B00D63A58;
+			remoteInfo = "ReSwift-watchOS";
+		};
+		00B5B1671C5B3D9700972097 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00B5B14D1C5B3D7D00972097 /* ReSwift.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 625E66821C1FF97E0027C288;
+			remoteInfo = "ReSwift-iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		00B5B1691C5B3D9700972097 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				00B5B1661C5B3D9700972097 /* ReSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		00B5B1291C5B3CEB00972097 /* ASCII-Ducks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ASCII-Ducks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +108,7 @@
 		00B5B13D1C5B3CEB00972097 /* ASCII-DucksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ASCII-DucksTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00B5B1411C5B3CEB00972097 /* ASCII_DucksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASCII_DucksTests.swift; sourceTree = "<group>"; };
 		00B5B1431C5B3CEB00972097 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00B5B14D1C5B3D7D00972097 /* ReSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReSwift.xcodeproj; path = Modules/ReSwift/ReSwift.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00B5B1651C5B3D9700972097 /* ReSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +133,7 @@
 		00B5B1201C5B3CEB00972097 = {
 			isa = PBXGroup;
 			children = (
+				00B5B14C1C5B3D6D00972097 /* Modules */,
 				00B5B12B1C5B3CEB00972097 /* ASCII-Ducks */,
 				00B5B1401C5B3CEB00972097 /* ASCII-DucksTests */,
 				00B5B12A1C5B3CEB00972097 /* Products */,
@@ -96,6 +171,28 @@
 			path = "ASCII-DucksTests";
 			sourceTree = "<group>";
 		};
+		00B5B14C1C5B3D6D00972097 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				00B5B14D1C5B3D7D00972097 /* ReSwift.xcodeproj */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		00B5B14E1C5B3D7D00972097 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00B5B1581C5B3D7D00972097 /* ReSwift.framework */,
+				00B5B15A1C5B3D7D00972097 /* ReSwift-iOSTests.xctest */,
+				00B5B15C1C5B3D7D00972097 /* ReSwift.framework */,
+				00B5B15E1C5B3D7D00972097 /* ReSwift-OSXTests.xctest */,
+				00B5B1601C5B3D7D00972097 /* ReSwift.framework */,
+				00B5B1621C5B3D7D00972097 /* ReSwift-tvOSTests.xctest */,
+				00B5B1641C5B3D7D00972097 /* ReSwift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,10 +203,12 @@
 				00B5B1251C5B3CEB00972097 /* Sources */,
 				00B5B1261C5B3CEB00972097 /* Frameworks */,
 				00B5B1271C5B3CEB00972097 /* Resources */,
+				00B5B1691C5B3D9700972097 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				00B5B1681C5B3D9700972097 /* PBXTargetDependency */,
 			);
 			name = "ASCII-Ducks";
 			productName = "ASCII-Ducks";
@@ -164,6 +263,12 @@
 			mainGroup = 00B5B1201C5B3CEB00972097;
 			productRefGroup = 00B5B12A1C5B3CEB00972097 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 00B5B14E1C5B3D7D00972097 /* Products */;
+					ProjectRef = 00B5B14D1C5B3D7D00972097 /* ReSwift.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				00B5B1281C5B3CEB00972097 /* ASCII-Ducks */,
@@ -171,6 +276,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		00B5B1581C5B3D7D00972097 /* ReSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReSwift.framework;
+			remoteRef = 00B5B1571C5B3D7D00972097 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		00B5B15A1C5B3D7D00972097 /* ReSwift-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ReSwift-iOSTests.xctest";
+			remoteRef = 00B5B1591C5B3D7D00972097 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		00B5B15C1C5B3D7D00972097 /* ReSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReSwift.framework;
+			remoteRef = 00B5B15B1C5B3D7D00972097 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		00B5B15E1C5B3D7D00972097 /* ReSwift-OSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ReSwift-OSXTests.xctest";
+			remoteRef = 00B5B15D1C5B3D7D00972097 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		00B5B1601C5B3D7D00972097 /* ReSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReSwift.framework;
+			remoteRef = 00B5B15F1C5B3D7D00972097 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		00B5B1621C5B3D7D00972097 /* ReSwift-tvOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ReSwift-tvOSTests.xctest";
+			remoteRef = 00B5B1611C5B3D7D00972097 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		00B5B1641C5B3D7D00972097 /* ReSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReSwift.framework;
+			remoteRef = 00B5B1631C5B3D7D00972097 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		00B5B1271C5B3CEB00972097 /* Resources */ = {
@@ -217,6 +374,11 @@
 			isa = PBXTargetDependency;
 			target = 00B5B1281C5B3CEB00972097 /* ASCII-Ducks */;
 			targetProxy = 00B5B13E1C5B3CEB00972097 /* PBXContainerItemProxy */;
+		};
+		00B5B1681C5B3D9700972097 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ReSwift-iOS";
+			targetProxy = 00B5B1671C5B3D9700972097 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -325,6 +487,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "ASCII-Ducks/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.steveriggins.ASCII-Ducks";
@@ -336,6 +499,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "ASCII-Ducks/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.steveriggins.ASCII-Ducks";
