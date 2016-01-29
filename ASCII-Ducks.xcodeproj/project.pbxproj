@@ -19,6 +19,8 @@
 		00B5B1701C5B4AB600972097 /* ScreenNavigationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B5B16F1C5B4AB600972097 /* ScreenNavigationAction.swift */; };
 		00B5B1721C5B4BE000972097 /* ScreenReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B5B1711C5B4BE000972097 /* ScreenReducer.swift */; };
 		00E640C71C5B589200C85125 /* MainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E640C61C5B589200C85125 /* MainStore.swift */; };
+		00E640CE1C5B602800C85125 /* HasNavigationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E640CD1C5B602800C85125 /* HasNavigationState.swift */; };
+		00E640D21C5B64D800C85125 /* ViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E640D11C5B64D800C85125 /* ViewControllers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +119,8 @@
 		00B5B16F1C5B4AB600972097 /* ScreenNavigationAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenNavigationAction.swift; sourceTree = "<group>"; };
 		00B5B1711C5B4BE000972097 /* ScreenReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenReducer.swift; sourceTree = "<group>"; };
 		00E640C61C5B589200C85125 /* MainStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainStore.swift; sourceTree = "<group>"; };
+		00E640CD1C5B602800C85125 /* HasNavigationState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HasNavigationState.swift; sourceTree = "<group>"; };
+		00E640D11C5B64D800C85125 /* ViewControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,8 +167,10 @@
 				00B5B16A1C5B3FD400972097 /* Actions */,
 				00B5B16B1C5B3FD400972097 /* Reducers */,
 				00B5B16C1C5B3FD400972097 /* Stores */,
+				00E640CC1C5B602800C85125 /* SharedStuff */,
 				00B5B12C1C5B3CEB00972097 /* AppDelegate.swift */,
 				00B5B12E1C5B3CEB00972097 /* ViewController.swift */,
+				00E640D11C5B64D800C85125 /* ViewControllers.swift */,
 				00B5B1301C5B3CEB00972097 /* Main.storyboard */,
 				00B5B1331C5B3CEB00972097 /* Assets.xcassets */,
 				00B5B1351C5B3CEB00972097 /* LaunchScreen.storyboard */,
@@ -227,6 +233,14 @@
 				00E640C61C5B589200C85125 /* MainStore.swift */,
 			);
 			path = Stores;
+			sourceTree = "<group>";
+		};
+		00E640CC1C5B602800C85125 /* SharedStuff */ = {
+			isa = PBXGroup;
+			children = (
+				00E640CD1C5B602800C85125 /* HasNavigationState.swift */,
+			);
+			path = SharedStuff;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,10 +404,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00E640D21C5B64D800C85125 /* ViewControllers.swift in Sources */,
 				00B5B16E1C5B436900972097 /* AppState.swift in Sources */,
 				00B5B1701C5B4AB600972097 /* ScreenNavigationAction.swift in Sources */,
 				00B5B12F1C5B3CEB00972097 /* ViewController.swift in Sources */,
 				00B5B12D1C5B3CEB00972097 /* AppDelegate.swift in Sources */,
+				00E640CE1C5B602800C85125 /* HasNavigationState.swift in Sources */,
 				00E640C71C5B589200C85125 /* MainStore.swift in Sources */,
 				00B5B1721C5B4BE000972097 /* ScreenReducer.swift in Sources */,
 			);

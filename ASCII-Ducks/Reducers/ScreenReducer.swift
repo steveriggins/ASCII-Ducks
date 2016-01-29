@@ -27,6 +27,7 @@ struct ScreenReducer: Reducer {
             switch action {
             case _ as ScreenActionNext:
                 newState.currentScreen = nextScreen(newState)
+                newState.navigationState = navigationState(newState)
             default:
                 break
             }
@@ -45,6 +46,23 @@ struct ScreenReducer: Reducer {
             return .C
         case .C:
             return .A
+        }
+    }
+    
+    func navigationState(state: AppState) -> NavigationState {
+        switch state.currentScreen {
+        case .A:
+            return NavigationState(viewControllers:[
+                ViewControllerA.newFromStoryBoard()])
+        case .B:
+            return NavigationState(viewControllers:[
+                ViewControllerA.newFromStoryBoard(),
+                ViewControllerB.newFromStoryBoard()])
+        case .C:
+            return NavigationState(viewControllers:[
+                ViewControllerA.newFromStoryBoard(),
+                ViewControllerB.newFromStoryBoard(),
+                ViewControllerC.newFromStoryBoard()])
         }
     }
 
